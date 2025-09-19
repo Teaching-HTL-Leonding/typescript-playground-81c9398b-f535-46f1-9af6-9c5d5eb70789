@@ -5,6 +5,9 @@ function setup() {
     fill("lightgrey")
     circle(300,350,400)
 
+    triangle(250,150,150,200,150,100)
+    triangle(450,200,450,100,350,150)
+
     fill("black")
     circle(225,325,50)
     circle(375,325,50)
@@ -18,8 +21,8 @@ function setup() {
     line(275,475,300,450)
     line(325,475,300,450)
     line(325,475,425,440)
-
     line(300,400,300,450)
     
-
+    fill("pink")
+    triangle(300,400,250,350,350,350)
 }
