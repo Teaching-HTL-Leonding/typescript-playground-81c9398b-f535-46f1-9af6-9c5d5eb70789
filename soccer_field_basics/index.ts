@@ -46,13 +46,19 @@ function setup() {
     rect(0,soccerMiddleLineY-lengthGoalArea/2,widthGoalArea,lengthGoalArea);
     rect(0,15,20,40)
 
-    rect(100,25,-5,20)
+    rect(100,25,-5.5,lengthGoalArea)
     rect(100,15,-20,40)
 
     line(50,0,50,70)
 
     circle(50,35,20)
 
+    circle(14,35,20)
+
+    fill("Green")
+
+    rect(0,31,-3.5,7.32)
+    rect(100,31,3.5,7.32)
 
 
     }
