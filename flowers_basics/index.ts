@@ -32,7 +32,6 @@ function setup() {
 
   //Flower2
 
-
   strokeWeight(15)
   stroke("green")
   noFill()
@@ -49,7 +48,7 @@ function setup() {
 
   fill("lightgreen")
   stroke("lightgreen")
-  circle(225 + 44, 400 + 31.9, CIRCLED2)
+  circle(215 + 44, 400 + 31.9, CIRCLED2)
 
   fill("lightgreen")
   stroke("lightgreen")
@@ -57,7 +56,7 @@ function setup() {
 
   fill("lightgreen")
   stroke("lightgreen")
-  circle(295 - 31.9, 325 + 44, CIRCLED2)
+  circle(285 - 31.9, 325 + 44, CIRCLED2)
 
   stroke("yellow")
   fill("yellow")
