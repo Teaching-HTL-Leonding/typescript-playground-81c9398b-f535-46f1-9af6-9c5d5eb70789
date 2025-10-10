@@ -32,6 +32,12 @@ function setup() {
 
   //Flower2
 
+
+  strokeWeight(15)
+  stroke("green")
+  noFill()
+  arc(475 / 2, 475, 250, 250, 100, 975);
+
   strokeWeight(2)
   fill("lightgreen")
   stroke("lightgreen")
@@ -39,19 +45,22 @@ function setup() {
 
   fill("lightgreen")
   stroke("lightgreen")
-  circle(315, 400+47.5, CIRCLED2)
+  circle(300 + 15.5, 400 + 47.5, CIRCLED2)
 
   fill("lightgreen")
   stroke("lightgreen")
-  circle(250, 440, CIRCLED2)
+  circle(225 + 44, 400 + 31.9, CIRCLED2)
 
   fill("lightgreen")
   stroke("lightgreen")
-  circle(300, 350, CIRCLED2)
+  circle(300 + 15.5, 350, CIRCLED2)
+
+  fill("lightgreen")
+  stroke("lightgreen")
+  circle(295 - 31.9, 325 + 44, CIRCLED2)
 
   stroke("yellow")
   fill("yellow")
   circle(300, 400, 65)
-
   // <<< ADD YOUR CODE HERE
 }
