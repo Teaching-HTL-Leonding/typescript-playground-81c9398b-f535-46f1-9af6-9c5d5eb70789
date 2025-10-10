@@ -4,7 +4,9 @@ function setup() {
   createCanvas(1000, 1000)
   background("white")
 
-  circle(700,200,65)
+  line
+  fill("yellow")
+  circle(700,400,65)
 
    // <<< ADD YOUR CODE HERE
 }
