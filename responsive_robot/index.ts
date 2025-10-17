@@ -12,5 +12,31 @@ function setup() {
   fill("gray");
   rect(headX, headY, headWidth, headHeight);
 
+  //Left Eye
+  const leftEyeCenterX = headX + headWidth * 0.25
+  const leftEyeCenterY = headY + headHeight * 0.25
+  const leftEyeDiamenter = min(headWidth, headHeight) * 0.2
+  //Todo: Calculate width of eye
+  fill("black")
+  circle(leftEyeCenterX, leftEyeCenterY, leftEyeDiamenter)
+
+  //Right Eye
+  const rightEyeCenterX = headX + headWidth * 0.75
+  const rightEyeCenterY = headY + headHeight * 0.25
+  const rightEyeDiamenter = min(headWidth, headHeight) * 0.2
+
+  circle(rightEyeCenterX, rightEyeCenterY, rightEyeDiamenter)
+
+  const antene = 
+ 
+  fill("white")
+  const mouthCenterX = headX + headWidth * 0.25
+  const mouthCenterY = headY + headHeight * 0.7
+  const mouthHeight = headHeight * 0.1
+  const mouthlength = headWidth * 0.5
+
+  rect(mouthCenterX, mouthCenterY, mouthlength, mouthHeight)
+
+
   // Add your code here
 }
