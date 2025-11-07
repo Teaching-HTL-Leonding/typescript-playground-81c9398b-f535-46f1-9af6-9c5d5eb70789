@@ -10,7 +10,8 @@ function mouseMoved() {
     stroke("wight")
     strokeWeight(1)
     noFill()
-    text(`Area: ${}`,10,height-10)
+    const area = Math.round((mouseX * mouseY) * Math.PI);
+    text(`Area: ${area}`, 10, height - 10)
 
 
     strokeWeight(4)
@@ -20,6 +21,8 @@ function mouseMoved() {
     let h = (height / 2 - mouseY) * 2
 
     rect(width / 2, height / 2, w, h)
+
+    line(mouseX,mouseY,mouseY - )
 
 
 
