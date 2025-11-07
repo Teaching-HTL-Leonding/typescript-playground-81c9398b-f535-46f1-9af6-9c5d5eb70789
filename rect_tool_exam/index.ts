@@ -23,7 +23,7 @@ function mouseMoved() {
     rect(width / 2, height / 2, w, h)
 
     line(mouseX, mouseY, mouseX + w, mouseY + h)
-    line(mouseX + w, mouseY + h, mouseX , mouseY)
+    line(mouseX , mouseY , mouseX , mouseY)
 
 
 
