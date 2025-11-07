@@ -8,14 +8,18 @@ function mouseMoved() {
     background("black")
 
     stroke("wight")
+    strokeWeight(4)
     noFill()
 
     rectMode(CENTER)
     let w = (width / 2 - height / 2)
     let h = (height / 2 - width / 2)
 
-    rect(width /2, height /2, w, h)
-    
+    rect(width /2, height /2, w,h)
+
+    text(`Area: ${}`, 5, height - 10)
+
+
 
 
 }
