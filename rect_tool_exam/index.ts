@@ -10,7 +10,9 @@ function mouseMoved() {
     stroke("wight")
     strokeWeight(1)
     noFill()
-    const area = Math.round((mouseX * mouseY) * Math.PI)
+    let w = (width / 2 - mouseX) * 2
+    let h = (height / 2 - mouseY) * 2
+    const area = Math.round((w * h))
 
     const snap = 20
     const markerSize = 10
@@ -22,8 +24,7 @@ function mouseMoved() {
     strokeWeight(4)
 
     rectMode(CENTER)
-    let w = (width / 2 - mouseX) * 2
-    let h = (height / 2 - mouseY) * 2
+
 
     rect(width / 2, height / 2, w, h)
 
@@ -35,6 +36,7 @@ function mouseMoved() {
     stroke("yellow")
     line(mouseX, mouseY + h, mouseX + w, mouseY + h)
     stroke("green")
-    line(mouseX , mouseY +h , mouseX + h, mouseY + w)
-
+    line(mouseX + w, mouseY, mouseX, mouseY)
+    stroke("red")
+    line(mouseX, mouseY, mouseX, mouseY + h)
 }
