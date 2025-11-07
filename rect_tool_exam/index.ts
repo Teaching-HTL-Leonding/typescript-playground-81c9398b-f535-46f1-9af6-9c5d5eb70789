@@ -10,9 +10,14 @@ function mouseMoved() {
     stroke("wight")
     strokeWeight(1)
     noFill()
-    const area = Math.round((mouseX * mouseY) * Math.PI);
-    text(`Area: ${area}`, 10, height - 10)
+    const area = Math.round((mouseX * mouseY) * Math.PI)
 
+    const snap = 20
+    const markerSize = 10
+    const x = Math.round(mouseX / snap) * snap
+    const y = Math.round(mouseY / snap) * snap
+
+    text(`Area: ${area}`, 10, height - 10)
 
     strokeWeight(4)
 
@@ -23,12 +28,13 @@ function mouseMoved() {
     rect(width / 2, height / 2, w, h)
 
     line(mouseX, mouseY, mouseX + w, mouseY + h)
-    line(mouseX , mouseY + h, mouseX + w, mouseY)
+    line(mouseX, mouseY + h, mouseX + w, mouseY)
 
-
-
-
-
+    stroke("blue")
+    line(mouseX + w, mouseY + h, mouseX + w, mouseY)
+    stroke("yellow")
+    line(mouseX, mouseY + h, mouseX + w, mouseY + h)
+    stroke("green")
+    line(mouseX , mouseY +h , mouseX + h, mouseY + w)
 
 }
-// <<< Add the function `mouseMoved` with the required code here
