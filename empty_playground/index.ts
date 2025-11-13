@@ -13,7 +13,7 @@ function draw() {
     noStroke()
     fill(colorHue, 100, 100)
     colorHue = (colorHue + 1) % 360
-    circle(x,x, x)
+    rect(x,x, 100)
     x = x + 1
     x = x % 300
 }
