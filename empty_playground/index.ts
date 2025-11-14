@@ -3,23 +3,14 @@ function setup() {
     background("lightblue")
 }
 
-let x: number = 0
-let direction: number = 3
-
 function draw() {
     background("lightblue")
-    fill("grey")
-    circle(x, 200, 50)
-    x += direction
+    stroke("red")
+    fill("darkblue")
+    rect(width / 2 - 50, height / 2 - 25, 100,50)
 
-    // === gleich
-    // !== nicht gleich
-    // >, >=, <, <= vergleiche
-    if (x >= width) { direction = -3 }
-    if (x === 0) { direction = 3 }
-    
+    if (mouseX >= width / 2 - 50 && mouseX <= width / 2 + 50
+     && mouseY >= height / 2 - 25 && mouseY <= height / 2 +25) {
+        text("drinnen", 10 ,10)
+    }
 }
-
-
-//bedingungen
-// if statements
