@@ -4,19 +4,22 @@ function setup() {
 }
 
 let x: number = 0
+let direction: number = 3
 
 function draw() {
     background("lightblue")
     fill("grey")
     circle(x, 200, 50)
-    x++
+    x += direction
 
     // === gleich
     // !== nicht gleich
     // >, >=, <, <= vergleiche
-    if (x === 400) {
-        console.log("Bin DA")
-    }
+    if (x >= width) { direction = -3 }
+    if (x === 0) { direction = 3 }
+    
 }
+
+
 //bedingungen
 // if statements
