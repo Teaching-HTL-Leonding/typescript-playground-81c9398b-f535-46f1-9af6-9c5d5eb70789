@@ -1,19 +1,22 @@
 function setup() {
-    createCanvas(300,300)
-    background("black")
-    colorMode(HSB)
-
+    createCanvas(400, 400)
+    background("lightblue")
 }
 
-let x : number = 0
-let colorHue: number = 0
+let x: number = 0
 
 function draw() {
-    background("black")
-    noStroke()
-    fill(colorHue, 100, 100)
-    colorHue = (colorHue + 1) % 360
-    rect(x,x, 100)
-    x = x + 1
-    x = x % 300
+    background("lightblue")
+    fill("grey")
+    circle(x, 200, 50)
+    x++
+
+    // === gleich
+    // !== nicht gleich
+    // >, >=, <, <= vergleiche
+    if (x === 400) {
+        console.log("Bin DA")
+    }
 }
+//bedingungen
+// if statements
