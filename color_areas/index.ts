@@ -1,4 +1,4 @@
-const th: number = 50;
+const tha: number = 50;
 
 function setup() {
     createCanvas(400, 200);
@@ -15,13 +15,13 @@ function setup() {
     rect(2 * width / 3, 0, width / 3, height)
 
     fill("white")
-    rect(0, height - th, width, th)
+    rect(0, height - tha, width, tha)
 
 }
 
 function mouseClicked() {
 
-    fill("ehite")
+    fill("white")
     rect(0,150,500)
 
     noStroke()
@@ -40,5 +40,5 @@ let message: string
     else{message = "Red"
     }
 
-    text(message, width / 2, height - th/ 2)
+    text(message, width / 2, height - tha/ 2)
 }
