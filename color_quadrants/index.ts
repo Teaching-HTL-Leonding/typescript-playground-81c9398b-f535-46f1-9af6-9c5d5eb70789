@@ -42,11 +42,6 @@ function mouseClicked() {
         message = "Green"
         if (mouseY > height / 2) {
             message = "Blue"
-
-
-
-
-
         }
     }
     text(message, width / 2, height / 2)
