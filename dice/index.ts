@@ -7,7 +7,7 @@ function setup() {
 
   // Generate an integer random number 
   // between 1 (including) and 7 (excluding)
-  const dice = Math.floor(6);
+  const dice = Math.floor(random(1,7));
 
   noStroke();
   fill("white");
@@ -43,7 +43,7 @@ function setup() {
     circle(width / 4, height - 50, dicePointDiameter);
     circle(width - 50, height / 4, dicePointDiameter);
     circle(width - 50, height / 2, dicePointDiameter);
-    circle(width - 50, height / 2, dicePointDiameter);
+    circle(width / 4, height / 2, dicePointDiameter);
   
   }
 }
