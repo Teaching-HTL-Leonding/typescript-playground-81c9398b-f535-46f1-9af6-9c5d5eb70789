@@ -27,12 +27,21 @@ function mouseClicked() {
     rect(100, 50, width / 2, height / 2)
 
     noStroke()
-    fill("black")
+    fill("white")
     textSize(30)
     textAlign(CENTER, CENTER)
 
-    let message : string
+    let message: string
 
-    if (mouseX < width) {
-    message = "white"
+    if (mouseX < width / 2) {
+        message = "Yellow"
+      if (mouseY < height / 2) {
+        message = "Red"
     }
+
+
+    }
+
+    text(message, width / 2, height / 2)
+    
+}
