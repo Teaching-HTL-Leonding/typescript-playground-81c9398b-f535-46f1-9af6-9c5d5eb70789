@@ -1,34 +1,30 @@
 function setup() {
-    createCanvas(300, 200);
+  createCanvas(400, 400);
 }
 
 const circleDiameter = 50;
 
-let ccX = 0;
-let ccY = 0;
-let drl = 2;
-let dou = 2;
-
+let circleCenterX = 200;
+let cirlceCenterY = 0
+let directionX = 2
+let directionY = 2
 // Remember: The _draw_ method is called FOR EVERY FRAME
 function draw() {
-    background("gold");
+  background("gold");
 
-    stroke("white");
-    strokeWeight(3);
-    fill("lime");
-    circle(ccX, height / 2, circleDiameter)
+  stroke("white");
+  strokeWeight(3);
+  fill("lime");
+  circle(circleCenterX, cirlceCenterY, circleDiameter);
 
-    fill("red")
-    circle(width / 2, ccY, circleDiameter)
+  circleCenterX += directionX
+  cirlceCenterY += directionY
 
-    ccX += drl
-    ccY += dou
-
-    if (ccX >= width || ccX <= 0) {
-        drl *= -1
-    }
-
-    if (ccY >= height || ccY <= 0) {
-        dou *= -1
-    }
-}
+  if (cirlceCenterY >= height || cirlceCenterY <= 0) {
+    directionY *= -1.1;
+  }
+    if (circleCenterX >= width || circleCenterX <= 0) {
+      directionX *= -1.1
+    
+  }
+  }
