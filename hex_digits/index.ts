@@ -18,7 +18,7 @@ function setup() {
   const d = floor(num / current) % 16
   current = 16
   const e = floor(num / current) % 16
-  current= 16
+  current = 16
   const f = floor(num / current) % 16
 
   if (a === 10) {
@@ -34,7 +34,7 @@ function setup() {
     digit1 = 'D'
   }
   (e === 14){
-  digit1 = 'E'
+    digit1 = 'E'
   }
   (f === 15){
     digit1 = 'F'
