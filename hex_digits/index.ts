@@ -34,7 +34,10 @@ function setup() {
     digit1 = 'D'
   }
   (e === 14){
-  digit1 = 'F'
+  digit1 = 'E'
+  }
+  (f === 15){
+    digit1 = 'F'
   }
   textAlign(CENTER, CENTER);
   fill("yellow");
