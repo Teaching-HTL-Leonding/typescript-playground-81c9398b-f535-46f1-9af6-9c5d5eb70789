@@ -24,19 +24,19 @@ function setup() {
   if (a === 10) {
     digit1 = 'A'
   }
-  else (b === 11){
+  else (b === 11) {
     digit1 = 'B'
   }
-  (c === 12){
+  (c === 12) {
     digit1 = 'C'
   }
-  (d === 13){
+  (d === 13) {
     digit1 = 'D'
   }
-  (e === 14){
+  (e === 14) {
     digit1 = 'E'
   }
-  (f === 15){
+  (f === 15) {
     digit1 = 'F'
   }
   textAlign(CENTER, CENTER);
