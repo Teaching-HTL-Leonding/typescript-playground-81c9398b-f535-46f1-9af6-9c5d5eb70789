@@ -6,6 +6,7 @@ function setup() {
   const h = 150
   const k = 80
   const kBright = 50
+  const kWidth = 100
 
   const a = num % 10
   const b = Math.floor(num / 10) % 10
@@ -37,11 +38,11 @@ function setup() {
   strokeWeight(2)
   noFill()
 
-  rect(50 + 80 * 0, 100, kBright, k)
-  rect(50 + 80 * 1, 100, kBright, k)
-  rect(50 + 80 * 2, 100, kBright, k)
-  rect(50 + 80 * 3, 100, kBright, k)
-  rect(50 + 80 * 4, 100, kBright, k)
-  rect(50 + 80 * 5, 100, kBright, k)
+  rect(50 + 80 * 0, kWidth, kBright, k)
+  rect(50 + 80 * 1, kWidth, kBright, k)
+  rect(50 + 80 * 2, kWidth, kBright, k)
+  rect(50 + 80 * 3, kWidth, kBright, k)
+  rect(50 + 80 * 4, kWidth, kBright, k)
+  rect(50 + 80 * 5, kWidth, kBright, k)
 
 }
