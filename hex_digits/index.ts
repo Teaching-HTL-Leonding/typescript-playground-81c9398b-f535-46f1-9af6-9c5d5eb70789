@@ -15,6 +15,11 @@ function setup() {
   current = 16
   const c = floor(num / current) % 16
   current = 16
+  const d = floor(num / current) % 16
+  current = 16
+  const e = floor(num / current) % 16
+  current= 16
+  const f = floor(num / current) % 16
 
   if (a === 10) {
     digit1 = 'A'
@@ -25,8 +30,12 @@ function setup() {
   (c === 12){
     digit1 = 'C'
   }
-  ()
-
+  (d === 13){
+    digit1 = 'D'
+  }
+  (e === 14){
+  digit1 = 'F'
+  }
   textAlign(CENTER, CENTER);
   fill("yellow");
   noStroke();
