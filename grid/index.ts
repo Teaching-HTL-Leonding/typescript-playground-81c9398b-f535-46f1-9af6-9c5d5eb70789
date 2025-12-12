@@ -23,6 +23,7 @@ function setup() {
     for (let i = GRID; i < SIZE; i += GRID) {
         fill("black")
         line(i, 0, i, SIZE)
+        line(0,i,SIZE,i)
     }
 }
     // Part 2: Draw horizontal lines
