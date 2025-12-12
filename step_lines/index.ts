@@ -29,12 +29,10 @@ function setup() {
     while (i < SIZE) {
         // Draw left part of the lines
         stroke("yellow");
-        line(GRID, i, GRID * (i / GRID), i);
-        i += GRID;
+        line(GRID, i, GRID * (i / GRID), i)
+        stroke("red")
+        line( GRID * (i / GRID), i,SIZE- GRID,i)
+        i += GRID
     }
 
-    // Draw right part of the lines
-    stroke("red");
-    line(GRID, i, GRID * (i / GRID), i);
-    i += GRID;
 }
