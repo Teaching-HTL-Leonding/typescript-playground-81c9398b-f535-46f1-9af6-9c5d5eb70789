@@ -23,7 +23,16 @@ function setup() {
     }
 
     strokeWeight(2);
-
+    
+    i = GRID;
+    while (i < SIZE) {
+        // Draw left part of the lines
+        stroke("yellow");
+        line(GRID, i, GRID * (i / GRID), i)
+        stroke("red")
+        line(GRID * (i / GRID), i, SIZE - GRID, i)
+        i += GRID
+    }
 
     for (let i = GRID; i < SIZE; i += GRID) {
 
