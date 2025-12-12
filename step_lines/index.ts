@@ -1,5 +1,4 @@
 function setup() {
-    const STRING = 25
     const SIZE = 400; // Canvas size (square)
     const GRID = 25; // Grid line distance
 
@@ -25,14 +24,13 @@ function setup() {
 
     strokeWeight(2);
 
-    i = GRID;
-    while (i < SIZE) {
-        // Draw left part of the lines
-        stroke("yellow");
-        line(GRID, i, GRID * (i / GRID), i)
-        stroke("red")
-        line( GRID * (i / GRID), i,SIZE- GRID,i)
-        i += GRID
-    }
 
+    for (let i = GRID; i < SIZE; i += GRID) {
+
+        stroke("yellow")
+        line(GRID, i, GRID * (i / GRID), i)
+
+        stroke("red")
+        line(GRID * (i / GRID), i, SIZE - GRID, i)
+    }
 }
