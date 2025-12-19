@@ -9,15 +9,10 @@ function setup() {
   strokeWeight(1);
   stroke("lime");
 
-  let a = MARGIN
-  while (a < SIZE) {
-    stroke(100, 100, 100)
-    
-    let b = SIZE
-    while (b < SIZE)
-      line(MARGIN,100,SIZE,100)
-    b += MARGIN
 
-    a += MARGIN
+  for (let leftside = MARGIN; leftside <= SIZE - MARGIN; leftside++) {
+    stroke(100, 100, 100)
+    line(MARGIN, SIZE, 100, 100)
+    leftside += MARGIN
   }
 }
