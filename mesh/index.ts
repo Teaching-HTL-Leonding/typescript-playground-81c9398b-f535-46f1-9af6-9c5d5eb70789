@@ -11,8 +11,11 @@ function setup() {
 
 
   for (let leftside = MARGIN; leftside <= SIZE - MARGIN; leftside++) {
-    stroke(100, 100, 100)
-    line(MARGIN, SIZE, 100, 100)
+    stroke(100, 1000, 100)
+    line(SIZE, leftside, MARGIN, MARGIN)
     leftside += MARGIN
+
+    for (let rightside = MARGIN; rightside <= SIZE - MARGIN; rightside++)
+
   }
 }
