@@ -13,7 +13,7 @@ function setup() {
         } else {
             fill("brown")
         }
-        rect(SQUARE_SIZE + a * SQUARE_SIZE, SQUARE_SIZE + SQUARE_SIZE, SQUARE_SIZE, SQUARE_SIZE)
+        rect(50-SQUARE_SIZE + a * SQUARE_SIZE, SQUARE_SIZE * 4 ,a * SQUARE_SIZE, SQUARE_SIZE)
     }
 
 
@@ -23,6 +23,6 @@ function setup() {
         } else {
             fill("brown")
         }
-        rect(SQUARE_SIZE + a / SQUARE_SIZE, SQUARE_SIZE + SQUARE_SIZE, SQUARE_SIZE, SQUARE_SIZE)
+        rect(SQUARE_SIZE +  a * SQUARE_SIZE,  SQUARE_SIZE + SQUARE_SIZE , SQUARE_SIZE, SQUARE_SIZE)
     }
 }
