@@ -25,8 +25,16 @@ function setup() {
   textAlign(CENTER, CENTER)
   fill("white")
   textSize(75)
-  for(let i = 0 ; i < scrambledWord.length; i++)
-  text(scrambledWord[1],random[],random[])
+
+  for (let i = 0; i < scrambledWord.length; i++) {
+    textSize(random(50,100))
+    fill(random(360),100,100)
+    push()
+    translate(random(20, 450), random(20, 250))
+    rotate(random(-75, 75))
+    text(scrambledWord[i], 0, 0)
+    pop()
+  }
 }
 
 function guess(textInput: string) {
