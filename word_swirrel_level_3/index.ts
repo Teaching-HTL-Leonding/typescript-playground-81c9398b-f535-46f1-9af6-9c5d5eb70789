@@ -9,21 +9,21 @@ const WORDS: string[] = [
   "cherry",
   "orange",
   "grape",
-  "lemon"
-  "melon"
-  "peach"
-  "plum"
-  "berry"
-  "water"
-  "cloud"
-  "bread"
-  "cheese"
-  "pizza"
-  "table"
-  "chair"
-  "house"
-  "grass"
-  "flower"
+  "lemon",
+  "melon",
+  "peach",
+  "plum",
+  "berry",
+  "water",
+  "cloud",
+  "bread",
+  "cheese",
+  "pizza",
+  "table",
+  "chair",
+  "house",
+  "grass",
+  "flower",
 ]
 
 function setup() {
