@@ -2,7 +2,7 @@ const WIDTH = 500;
 const HEIGHT = 300;
 const MARGIN = 50;
 
-let wordToGuess = "apple";
+let wordToGuess = random()
 const WORDS: string[] = [
   "apple",
   "banana",
