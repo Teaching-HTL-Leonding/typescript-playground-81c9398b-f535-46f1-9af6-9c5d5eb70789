@@ -1,5 +1,3 @@
-
-
 const WORDS: string[] = [
   "apple",
   "banana",
@@ -22,19 +20,21 @@ const WORDS: string[] = [
   "grass",
   "flower",
 ]
+
 const WIDTH = 500;
 const HEIGHT = 300;
 const MARGIN = 50;
 
-
+let wordToGuess: string
 
 function setup() {
-  let wordToGuess = random(WORDS)
   createCanvas(WIDTH, HEIGHT);
   background("black");
   textAlign(CENTER, CENTER);
   colorMode(HSB);
   angleMode(DEGREES);
+
+  wordToGuess = random(WORDS)
 
   for (let i = 0; i < wordToGuess.length; i++) {
     // Get random position, font size, text color, and angle
