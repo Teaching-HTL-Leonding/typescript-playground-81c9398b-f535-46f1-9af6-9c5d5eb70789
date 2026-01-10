@@ -1,8 +1,5 @@
-const WIDTH = 500;
-const HEIGHT = 300;
-const MARGIN = 50;
 
-let wordToGuess = random()
+
 const WORDS: string[] = [
   "apple",
   "banana",
@@ -25,8 +22,14 @@ const WORDS: string[] = [
   "grass",
   "flower",
 ]
+const WIDTH = 500;
+const HEIGHT = 300;
+const MARGIN = 50;
+
+
 
 function setup() {
+  let wordToGuess = random(WORDS)
   createCanvas(WIDTH, HEIGHT);
   background("black");
   textAlign(CENTER, CENTER);
