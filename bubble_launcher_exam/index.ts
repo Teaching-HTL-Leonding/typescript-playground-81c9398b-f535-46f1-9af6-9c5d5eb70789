@@ -12,15 +12,17 @@ function setup() {
 
 function draw() {
 
-        for (let i = 0; circleX.lenght; i++){
-        background("white");
 
-        fill('lightgray');
-        stroke('darkgray');
-        rect(0, 0, DIAM, height);
+    background("white");
 
-        fill('yellow');
-        stroke('gold');
+    fill('lightgray');
+    stroke('darkgray');
+    rect(0, 0, DIAM, height);
+
+    fill('yellow');
+    stroke('gold');
+
+    for (let i = 0; circleX.length; i++) {
 
         circle(circleX[i], circleY[i], DIAM);
 
@@ -34,7 +36,7 @@ function draw() {
 }
 
 function mouseClicked() {
-    circleX=circleY
-    circleY=circleX
-    
+    circleX[] = circleY[]
+    circleY[] = circleX[]
+
 }
