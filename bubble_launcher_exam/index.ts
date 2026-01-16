@@ -23,7 +23,7 @@ function draw() {
     stroke('gold');
 
     for (let i = 0; circleX.length; i++) {
-
+        
         circle(circleX[i], circleY[i], DIAM);
 
         circleX[i] += SPEED * direction;
@@ -36,7 +36,7 @@ function draw() {
 }
 
 function mouseClicked() {
-    circleX[] = circleY[]
-    circleY[] = circleX[]
+    circleX.push(0,100)
+
 
 }
