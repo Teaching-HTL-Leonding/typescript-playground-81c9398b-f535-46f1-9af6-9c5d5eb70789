@@ -39,8 +39,8 @@ function draw() {
         }
 
         bubble[i] += SPEED[i]
-        if (bubble[1] < + 0) || bubble[1] > + width{
-            a[1] *= -1
+        if (bubble[1] < + 0 || bubble[1] > + width) {
+            circleX[1] *= -1
         }
 
 
@@ -50,5 +50,4 @@ function draw() {
 function mouseClicked() {
     if (mouseX > 0 && mouseX < width && mouseY > 0 && mouseY < height)
         circleY.push(random(0, 300))
-
 }
