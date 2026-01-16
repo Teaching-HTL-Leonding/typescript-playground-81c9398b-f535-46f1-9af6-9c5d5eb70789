@@ -27,7 +27,7 @@ function draw() {
 
 
 
-    for (let i = 0; bubble.length; i++) {
+    for (let i = 0; i < bubble.length; i++) {
 
         circle(circleX[i], circleY[i], DIAM);
 
@@ -48,6 +48,8 @@ function draw() {
 }
 
 function mouseClicked() {
-    if (mouseX > 0 && mouseX < width && mouseY > 0 && mouseY < height)
+    if (mouseX > 0 && mouseX < width && mouseY > 0 && mouseY < height){
         circleY.push(random(0, 300))
+        circleX.push(0)
+}
 }
