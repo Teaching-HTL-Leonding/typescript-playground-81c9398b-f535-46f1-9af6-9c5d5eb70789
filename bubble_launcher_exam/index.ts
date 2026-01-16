@@ -22,6 +22,8 @@ function draw() {
     fill('yellow');
     stroke('gold');
 
+
+
     for (let i = 0; circleX.length; i++) {
         
         circle(circleX[i], circleY[i], DIAM);
@@ -30,13 +32,17 @@ function draw() {
         if (circleX[i] - RADI < 0 || circleX[i] + RADI > width) {
             direction *= -1;
             circleX[i] = max(RADI, min(width - RADI, circleX[i]));
+            
         }
+
+
     }
 
 }
 
 function mouseClicked() {
-    circleX.push(0,100)
+    circleX.push()
+    circleY.push()
 
 
 }
