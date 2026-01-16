@@ -12,7 +12,7 @@ function setup() {
 
 function draw() {
 
-    for (let i = 0; i < direction; i++) {
+        for (let i = 0; circleX.lenght; i++){
         background("white");
 
         fill('lightgray');
@@ -30,9 +30,11 @@ function draw() {
             circleX[i] = max(RADI, min(width - RADI, circleX[i]));
         }
     }
+
 }
 
 function mouseClicked() {
-    circleX[]+=circleY[]
-    circleY[]+=circleX[]
+    circleX=circleY
+    circleY=circleX
+    
 }
