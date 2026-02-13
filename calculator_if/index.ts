@@ -5,6 +5,7 @@ let lineHeight: number = 0;   // Height of a line of the responsive layout
 let cellWidth: number = 0;    // Width of a cell of the responsive layout
 let TextSize: number = 0
 
+
 function setup() {
     createCanvas(500, 600);
     lineHeight = height / 5;
@@ -43,6 +44,21 @@ function draw() {
     text("9", cellWidth * 2.5, lineHeight * 1.5)
 }
 
-    function mouseClicked() {
-        
+function mouseClicked() {
+    let num: string = ""
+  let sides = floor(mouseX / cellWidth)
+  let up = floor(mouseY / lineHeight)
+
+
+  if (up > 0) {
+
+    if (up == 1) num += ["7","8","9"][sides]
+    if (up == 2) num += ["4","5","6"][sides]
+    if (up == 3) num += ["1","2","3"][sides]
+
+    if (up == 4) {
+      if (sides == 1) num += "0"
+      if (sides == 2) num = ""
     }
+  }
+}
