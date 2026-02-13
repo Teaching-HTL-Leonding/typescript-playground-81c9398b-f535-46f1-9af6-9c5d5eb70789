@@ -93,15 +93,14 @@ function mouseClicked() {
         }break
 
         case 4: {
-            switch (sides)
-            case 0:
-                num += "0" || "0"
-                break
-                case 1:
+            switch (sides) {
+                case 2:
                     num = ""
                     break
+                default:
+                    num += "0"
+                    break
             }break
-
         }
-
     }
+}
