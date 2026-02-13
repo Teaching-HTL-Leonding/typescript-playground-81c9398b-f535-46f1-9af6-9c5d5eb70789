@@ -1,6 +1,6 @@
 const MARGIN_NUM = 10;
 
-let num: number = 0;          // Current number entered by the user
+let num: string = "";          // Current number entered by the user
 let lineHeight: number = 0;   // Height of a line of the responsive layout
 let cellWidth: number = 0;    // Width of a cell of the responsive layout
 let TextSize: number = 0
@@ -21,10 +21,16 @@ function draw() {
     noStroke()
     rect(MARGIN_NUM, MARGIN_NUM, width - 2 * MARGIN_NUM, lineHeight - 2 * MARGIN_NUM);
 
+    fill("black")
+    textSize(50)
+    textAlign(RIGHT, CENTER)
+    text(num, width - 20, lineHeight / 2)
+
     stroke("black")
     for (let i = 0; i < 6; i++) {
         line(i, lineHeight * i, width, lineHeight * i);
     }
+
     line(cellWidth * 2, lineHeight, cellWidth * 2, height)
     line(cellWidth, lineHeight, cellWidth, lineHeight * 4)
 
@@ -45,20 +51,51 @@ function draw() {
 }
 
 function mouseClicked() {
-    let num: string = ""
-  let sides = floor(mouseX / cellWidth)
-  let up = floor(mouseY / lineHeight)
+    let sides = floor(mouseX / cellWidth)
+    let up = floor(mouseY / lineHeight)
 
 
-  if (up > 0) {
+    if (up === 1) {
 
-    if (up == 1) num += ["7","8","9"][sides]
-    if (up == 2) num += ["4","5","6"][sides]
-    if (up == 3) num += ["1","2","3"][sides]
-
-    if (up == 4) {
-      if (sides == 1) num += "0"
-      if (sides == 2) num = ""
+        if (sides === 0) {
+            num += "7"
+        }
+        else if (sides === 1) {
+            num += "8"
+        }
+        else if (sides === 2) {
+            num += "9"
+        }
     }
-  }
+    if (up === 2) {
+        if (sides === 0) {
+            num += "4"
+        }
+        else if (sides === 1) {
+            num += "5"
+        }
+        else if (sides === 2) {
+            num += "6"
+        }
+    }
+    if (up === 3) {
+        if (sides === 0) {
+            num += "1"
+        }
+        else if (sides === 1) {
+            num += "2"
+        }
+        else if (sides === 2) {
+            num += "3"
+        }
+    }
+    if (up === 4) {
+        if (sides === 0 || sides === 1) {
+            num += "0"
+        }
+        else if (sides === 2) {
+            num = ""
+        }
+
+    }
 }
