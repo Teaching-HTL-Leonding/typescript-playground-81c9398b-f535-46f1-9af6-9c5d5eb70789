@@ -1,6 +1,6 @@
 let isHappy: boolean = true;
 
-function setup(){
+function setup(): void {
   createCanvas(500, 500)
   background("white")
   angleMode(DEGREES)
@@ -17,22 +17,18 @@ function smile(happy: boolean): void {
   fill("yellow")
   circle(x, y, 100)
 
-
   fill("black")
   circle(x - 25, y - 10, 10)
   circle(x + 25, y - 10, 10)
 
-
   if (happy) {
-
     arc(x, y + 10, 50, 40, 0, 180)
   } else {
-
     arc(x, y + 40, 50, 40, 180, 360)
   }
 }
 
-function mousePressed(){
+function mousePressed(): void {
   smile(isHappy)
-  isHappy = isHappy
+  isHappy = !isHappy
 }
