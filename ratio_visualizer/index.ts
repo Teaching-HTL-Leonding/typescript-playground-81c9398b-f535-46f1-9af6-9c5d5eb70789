@@ -16,23 +16,32 @@ const COLOR_EMPTY = "lightgray";
 const COLOR_STROKE = "white";
 
 // The random number we want to visualize (0–100)
-let randomNumber: number;
-
+let randomNumber: number; {
+    (100)
+}
 function draw(): void {
 
-    circleHeight = height /11
+    circleHeight = height / 11
     circleWidth = width / 11
-    for(let i = 0; i < 10; i++){
-    for(let a = 0; a < 10; a++){
-    noStroke()
-    fill(COLOR_FILLED)
-    circle(circleWidth * a + CELL_SIZE,circleHeight * i + CELL_SIZE,35)
-    }
+    for (let i = 0; i < 10; i++) {
+        for (let a = 0; a < 10; a++) {
+            stroke(COLOR_STROKE)
+            fill(COLOR_FILLED)
+            circle(circleWidth * a + CELL_SIZE, circleHeight * i + CELL_SIZE, 35)
+        }
     }
 }
 
 function setup(): void {
+    push()
     createCanvas(COLS * CELL_SIZE + 2 * MARGIN, ROWS * CELL_SIZE + TITLE_HEIGHT + MARGIN);
     randomNumber = Math.floor(Math.random() * 101);
     background("white");
+    if (function draw(): void {
+        for (let i = 0; i < randomNumber;i++){
+        fill(COLOR_EMPTY)
+        circle(circleWidth * i + CELL_SIZE, circleHeight + CELL_SIZE, 35)
+        }
+    }
+    )pop()
 }
