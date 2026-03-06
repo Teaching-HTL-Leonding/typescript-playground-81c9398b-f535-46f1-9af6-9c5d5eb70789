@@ -20,22 +20,28 @@ const COLOR_FILLED = "steelblue";
 let randomNumber: number;
 
 function draw(): void {
-
     stroke(COLOR_FILLED)
     strokeWeight(3)
-    if (randomNumber 0) {
-        for (let i = 0; i < 5; i++) {
+    if (randomNumber === 1) {
+        line(GROUPS_PER_ROW + CELL_W, 100, GROUPS_PER_ROW + CELL_H, 50)
+    }
+    if (randomNumber === 2) {
+        for (let i = 0; i < 2; i++) {
             line(GROUPS_PER_ROW * i + CELL_W, 100, GROUPS_PER_ROW * i + CELL_H, 50)
         }
+    } if (randomNumber === 3) {
+        for (let i = 0; i < 3; i++)
+            line(GROUPS_PER_ROW * i + CELL_W, 100, GROUPS_PER_ROW * i + CELL_H, 50)
+    } if (randomNumber === 4) {
+        for (let i = 0; i < 4; i++)
+            line(GROUPS_PER_ROW * i + CELL_W, 100, GROUPS_PER_ROW * i + CELL_H, 50)
     }
     else if (randomNumber === 5) {
-        for (let i = 0; i < 5; i++) {
+        for (let i = 0; i < 5; i++)
             line(GROUPS_PER_ROW * i + CELL_W, 100, GROUPS_PER_ROW * i + CELL_H, 50)
-            line(50, 100, 100, 50)
-        }
+        line(50, 100, 100, 50)
     }
 }
-
 function setup(): void {
     const canvasW = GROUPS_PER_ROW * CELL_W + 2 * MARGIN;
     const canvasH = ROWS * CELL_H + TITLE_HEIGHT + MARGIN;
