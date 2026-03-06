@@ -20,6 +20,7 @@ const COLOR_FILLED = "steelblue";
 let randomNumber: number;
 
 function draw(): void {
+    
     stroke(COLOR_FILLED)
     strokeWeight(3)
     if (randomNumber === 1) {
@@ -52,4 +53,5 @@ function setup(): void {
     background("white");
 
     text(`Random number: ${randomNumber} / 5`, width / 3 + 25, 20)
+
 }
