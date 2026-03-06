@@ -2,7 +2,7 @@
 const GROUPS_PER_ROW = 10;
 const ROWS = 10;
 const MARKS_PER_GROUP = 5;
-const TOTAL = 5; // 500
+const TOTAL = ROWS * GROUPS_PER_ROW * MARKS_PER_GROUP // 500
 
 const GROUP_W = 42;   // width of one tally group
 const GROUP_H = 36;   // height of the vertical strokes
@@ -19,8 +19,12 @@ const COLOR_FILLED = "steelblue";
 // The random number to visualize (0–500)
 let randomNumber: number;
 
+function isit(row: number, col: number, n: number): boolean {
+    return row * 10 + col < n;
+}
+
 function draw(): void {
-    
+push()
     stroke(COLOR_FILLED)
     strokeWeight(3)
     if (randomNumber === 1) {
@@ -41,7 +45,7 @@ function draw(): void {
         for (let i = 0; i < 5; i++)
             line(GROUPS_PER_ROW * i + CELL_W, 100, GROUPS_PER_ROW * i + CELL_H, 50)
         line(50, 100, 100, 50)
-    }
+    }pop()
 }
 function setup(): void {
     const canvasW = GROUPS_PER_ROW * CELL_W + 2 * MARGIN;
@@ -51,7 +55,15 @@ function setup(): void {
     randomNumber = Math.floor(Math.random() * (TOTAL + 1));
 
     background("white");
-
-    text(`Random number: ${randomNumber} / 5`, width / 3 + 25, 20)
-
+    textAlign(CENTER)
+    text(`Random number: ${randomNumber} / 500`, width / 2, 20)
+    for (let row = 0; row < ROWS; row++) {
+        push();
+        for (let col = 0; col < TOTAL; col++) {
+            draw();
+            translate(CELL_W, 0);
+        }
+        pop();
+        translate(0, CELL_W);
+    }
 }
