@@ -22,7 +22,7 @@ function drawDomino(dice1: number, dice2: number) {
   translate(diceSize, 0)
   drawDice(dice2)
 
-  fill("white")
+  stroke("white")
   strokeWeight(5)
   line(0, 20, 0, 180)
 }
