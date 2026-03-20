@@ -4,7 +4,7 @@ const centerY = diceSize / 2;
 const size = 80;
 
 function setup() {
-    createCanvas(diceSize * 12 + 30, diceSize + 30);
+    createCanvas(diceSize * 10 + 70 , diceSize + 30);
     const randomDomino1 = floor(random(1, 7))
     const randomDomino2 = floor(random(1, 7))
     const randomDomino3 = floor(random(1, 7))
