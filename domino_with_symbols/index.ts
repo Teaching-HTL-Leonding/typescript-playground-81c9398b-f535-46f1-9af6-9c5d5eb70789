@@ -5,8 +5,8 @@ const size = 80;
 
 function setup() {
   createCanvas(diceSize * 2 + 30, diceSize + 30);
-  const randomDomino1 = random(1,7)
-  const randomDomino2 = random(1,7)
+  const randomDomino1 = floor(random(1,7))
+  const randomDomino2 = floor(random(1,7))
   background("lightgray");
   translate(15, 15);
 
