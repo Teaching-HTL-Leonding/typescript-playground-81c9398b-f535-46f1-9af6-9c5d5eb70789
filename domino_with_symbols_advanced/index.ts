@@ -4,7 +4,7 @@ const centerY = diceSize / 2;
 const size = 80;
 
 function setup() {
-    createCanvas(diceSize * 13 + 80, diceSize + 30);
+    createCanvas(diceSize * 13 + 80, diceSize * 10);
     const randomDomino1 = floor(random(1, 7))
     const randomDomino2 = floor(random(1, 7))
     background("lightgray");
@@ -16,7 +16,23 @@ function setup() {
     for (let i = 0; i < 6; i++) {
         drawDomino(i, i + 1)
         translate(diceSize + 10, 0)
-        
+        drawDomino2(i + 1, i + 1)
+        translate(0, diceSize + 10)
+    }
+    function drawDomino2(domino1: number, domino2: number) {
+        fill("black");
+        noStroke();
+
+        rect(0, diceSize, diceSize, diceSize)
+        rect(0, diceSize, diceSize, - diceSize)
+        drawSymbol(domino1)
+
+        translate(0, diceSize)
+        drawSymbol(domino2)
+
+        stroke("white")
+        strokeWeight(5)
+        line(180, 20, 20, 20)
     }
 }
 function drawDomino(domino1: number, domino2: number) {
