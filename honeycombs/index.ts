@@ -30,6 +30,12 @@ function drawHexagon() {
     line(45, 0, 65, 25)
     line(65, 25, 45, 50)
 }
+function drawHexagon1Line() {
+    for (let i = 0; i < 5; i++) {
+        translate(90, 0)
+        drawHexagon()
+    }
+}
 function drawHexagonsLines() {
     for (let i = 0; i < 5; i++) {
         translate(90, 0)
@@ -44,11 +50,15 @@ function drawHexagonsLines() {
     }
 }
 function drawHoneycomb() {
-    translate(0, 80)
     drawHexagonsLines()
-    for (let i = 0; i < 6; i++) {
+    for (let i = 0; i < 5; i++) {
         translate(-135, 25)
         drawHexagonsLines()
+    }
+    translate(-135,25)
+    for (let i = 0; i < 5; i++) {
+        translate(90, 0)
+        drawHexagon()
     }
 }
 
