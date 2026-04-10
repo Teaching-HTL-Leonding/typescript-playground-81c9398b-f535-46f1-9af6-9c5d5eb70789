@@ -1,5 +1,5 @@
 function setup() {
-    createCanvas(450, 500);   // create a 450×370 px drawing surface
+    createCanvas(450, 370);   // create a 450×370 px drawing surface
     background("black");      // fill the canvas with black
     stroke("yellow");         // all future lines will be yellow
     // (no fill() call → shapes are outlines only)
@@ -21,7 +21,6 @@ function setup() {
     //          (20,50) ──────── (45,50)
     //
     // Each line() call: line(x1, y1, x2, y2)
-
 }
 function drawHexagon() {
     line(20, 0, 45, 0)
@@ -45,10 +44,10 @@ function drawHexagonsLines() {
     }
 }
 function drawHoneycomb() {
-    translate(0,80)
+    translate(0, 80)
     drawHexagonsLines()
     for (let i = 0; i < 6; i++) {
-        translate(-135,25)
+        translate(-135, 25)
         drawHexagonsLines()
     }
 }
