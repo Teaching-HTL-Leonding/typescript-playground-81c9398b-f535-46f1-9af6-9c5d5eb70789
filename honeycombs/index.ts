@@ -7,9 +7,8 @@ function setup() {
     // Move the coordinate origin 10 px right and 10 px down.
     // Every subsequent drawing call is now relative to (10, 10),
     // giving us a small margin around the hive.
-    translate(10,-80)
-    drawHexagon2Line()
-    
+
+
     translate(-80, 10);
     drawHexagon()
     // Draw a single hexagon using six line() calls.
@@ -38,8 +37,16 @@ function drawHexagon() {
         translate(90, 0)
         drawHoneycombs()
     }
+    for (let i = 0; i < 1; i++) {
+        translate(-45, 25)
+        drawHoneycombs()
 
+        for (let i = 0; i < 2; i++) {
+            translate(-45, 25)
+            drawHoneycombs()
+        }
 
+    }
 }
 function drawHexagon2Line() {
     for (let i = 0; i < 5; i++) {
