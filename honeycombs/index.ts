@@ -8,9 +8,8 @@ function setup() {
     // Every subsequent drawing call is now relative to (10, 10),
     // giving us a small margin around the hive.
 
-
     translate(-80, 10);
-    drawHexagon()
+    drawHoneycomb()
     // Draw a single hexagon using six line() calls.
     //
     // Vertex layout (pixel coordinates, origin = top-left of bounding box):
@@ -24,7 +23,7 @@ function setup() {
     // Each line() call: line(x1, y1, x2, y2)
 
 }
-function drawHoneycombs() {
+function drawHexagon() {
     line(20, 0, 45, 0)
     line(20, 0, 0, 25)
     line(0, 25, 20, 50)
@@ -32,25 +31,24 @@ function drawHoneycombs() {
     line(45, 0, 65, 25)
     line(65, 25, 45, 50)
 }
-function drawHexagon() {
+function drawHexagonsLines() {
     for (let i = 0; i < 5; i++) {
         translate(90, 0)
-        drawHoneycombs()
+        drawHexagon()
     }
-    for (let i = 0; i < 1; i++) {
-        translate(-45, 25)
-        drawHoneycombs()
+    translate(-45, 25)
+    drawHexagon()
 
-        for (let i = 0; i < 3; i++) {
-            translate(-90, 0)
-            drawHoneycombs()
-        }
+    for (let i = 0; i < 3; i++) {
+        translate(-90, 0)
+        drawHexagon()
     }
 }
-function drawHexagon2Line() {
-    for (let i = 0; i < 5; i++) {
-        translate(0, 90)
-        drawHoneycombs()
+function drawHoneycomb() {
+    for (let i = 0; i < 4) {
+        translate(0,90)
+        drawHexagonsLines()
     }
 }
+
 // <<< ADD YOUR CODE HERE >>>
