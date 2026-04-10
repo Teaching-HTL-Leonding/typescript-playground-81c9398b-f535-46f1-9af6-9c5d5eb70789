@@ -44,6 +44,7 @@ function drawHexagonSecondLine() {
 }
 function drawHexagonsAllLines() {
     drawHexagonFirstLine()
+    
     translate(-45, 25)
     drawHexagon()
 
