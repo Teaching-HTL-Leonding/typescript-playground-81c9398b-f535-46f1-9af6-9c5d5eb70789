@@ -41,11 +41,10 @@ function drawHexagon() {
         translate(-45, 25)
         drawHoneycombs()
 
-        for (let i = 0; i < 2; i++) {
-            translate(-45, 25)
+        for (let i = 0; i < 3; i++) {
+            translate(-90, 0)
             drawHoneycombs()
         }
-
     }
 }
 function drawHexagon2Line() {
